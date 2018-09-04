@@ -27,7 +27,18 @@ module.exports = {
           }
         }, {
           loader: 'sass-loader' // compiles Sass to CSS
-        }]
+        },
+       
+      ]
+      },
+      {
+        test: /\.(png|jpg|jpeg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}
+          }
+        ]
       }
     ]
   },
