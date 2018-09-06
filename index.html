@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Navneet Lal Gupta</title>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body>
   <!-- Alert message -->
   <div class="alert alert-warning alert-dismissible fade show" role="alert">
     “Heroes are made by the paths they choose, not the powers they are graced with.” – Tony Stark
-    <!-- <a href="#" class="badge badge-primary">New</a> -->
+    <a href="#quotes" class="badge badge-info ml-2">More</a>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
       <span aria-hidden="true">&times;</span>
     </button>
@@ -28,14 +29,17 @@
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#armors">Armors</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link" href="#">Powers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Skills</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -69,12 +73,30 @@
   </div>
   <!-- Jumbotrons -->
   <div class="jumbotron">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">“You can take away my suits, you can take away my home, but there’s one thing you can never take away
-      from me: I AM IRON MAN.” – Tony Stark</p>
+    <h1 class="display-4" id="quotes">Quotes</h1>
+    <p class="lead">“sometimes you gotta Run before you can Walk.” ― tony stark </p>
     <hr class="my-4">
-    <p>“ I shouldn’t be alive, unless it was for a reason, I know what I have to do, and I know it is right.” – Tony Stark</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Read More Quotes....
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <p>“ I shouldn’t be alive, unless it was for a reason, I know what I have to do, and I know it is right.”</p>
+            <p>" Don't let someone who has done done nothing tell you how to to do anything."</p>
+            <p>"If we can't protect the world you can be damn sure we'll avenge it."</p>
+            <p>"You need to know what to do when the sun is not shinning."</p>
+            <p>"The lesson is that you can still make mistakes and be forgiven"</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- Card Element -->
   <div class="card mb-3">
@@ -85,144 +107,306 @@
         away from me: I AM IRON MAN.” – Tony Stark</p>
     </div>
   </div>
-<!-- Suits Detail -->
-  <section class="container row justify-content-around mx-auto my-auto">
-    <div class="col-sm-6 col-md-4 my-1">
+  <!-- Suits Detail -->
+  <section class="container my-auto text-center" id="heading_armor">
+    <h1>Armors</h1>
+  </section>
+  <section class="container row mx-auto py-2" id="armors">
+
+    <div class="col-sm-6 col-md-4 my-2">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-1.png" alt="Card image cap">
         <div class="card-body">
           <h2>Mark 1 </h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"><strong>Name :</strong> None <br><strong>Type :</strong> None</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 my-1">
+    <div class="col-sm-6 col-md-4 my-2">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-2.png" alt="Card image cap">
         <div class="card-body">
           <h2>Mark 2</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"><strong>Name :</strong> None <br><strong>Type :</strong> None</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 my-1">
+    <div class="col-sm-6 col-md-4 my-2">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-3.png" alt="Card image cap">
         <div class="card-body">
           <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"><strong>Name :</strong> None <br><strong>Type :</strong> None</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 my-2">
+      <div class="card">
+        <img class="card-img-top" src="images/armors/mark-25.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Mark 25</h2>
+          <p class="card-text"><strong>Name :</strong> Striker <br><strong>Type :</strong> Heavy Construction Suit</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 my-2">
+      <div class="card">
+        <img class="card-img-top" src="images/armors/mark-26.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Mark 26</h2>
+          <p class="card-text"><strong>Name :</strong> Gamma <br><strong>Type :</strong> Heavy Construction Suit Upgrade</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 my-2">
+      <div class="card">
+        <img class="card-img-top" src="images/armors/mark-29.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Mark 29</h2>
+          <p class="card-text"><strong>Name :</strong> Fiddler <br><strong>Type :</strong> Nimble Construction Suit</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 my-2">
+      <div class="card">
+        <img class="card-img-top" src="images/armors/mark-30.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Mark 30 </h2>
+          <p class="card-text"><strong>Name :</strong> Blue Steel <br><strong>Type :</strong> Silver Centurion Suit</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 my-2">
+      <div class="card">
+        <img class="card-img-top" src="images/armors/mark-35.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Mark 35</h2>
+          <p class="card-text"><strong>Name :</strong> Red Snapper <br><strong>Type :</strong> Disaster Rescue Suit</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 my-2">
+      <div class="card">
+        <img class="card-img-top" src="images/armors/mark-36.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Mark 36</h2>
+          <p class="card-text"><strong>Name :</strong> PeaceMaker <br><strong>Type :</strong> Riot-Control Suit</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 my-2">
+      <div class="card">
+        <img class="card-img-top" src="images/armors/mark-37.png" alt="Card image cap">
+        <div class="card-body">
+          <h2>Mark 37</h2>
+          <p class="card-text"><strong>Name :</strong> Hammer Head <br><strong>Type :</strong> Deep Seas Suit</p>
         </div>
       </div>
     </div>
     <div class="col-sm-6 col-md-4 my-1">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-38.png" alt="Card image cap">
         <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h2>Mark 38</h2>
+          <p class="card-text"><strong>Name :</strong> Igor <br><strong>Type :</strong> Heavy Lifting Suit</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 my-1">
+    <div class="col-sm-6 col-md-4 my-2">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-41.png" alt="Card image cap">
         <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h2>Mark 41</h2>
+          <p class="card-text"><strong>Name :</strong> Bones <br><strong>Type :</strong> Skeleton Suit</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 my-1">
+    <div class="col-sm-6 col-md-4 my-2">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-42.png" alt="Card image cap">
         <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h2>Mark 42</h2>
+          <p class="card-text"><strong>Name :</strong> The Prodigal Son <br><strong>Type :</strong> Prehensile Suit</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 my-1">
+    <div class="col-sm-6 col-md-4 my-2">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-44.png" alt="Card image cap">
         <div class="card-body">
-          <h2>Mark 1 </h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h2>Mark 44</h2>
+          <p class="card-text"><strong>Name :</strong> Hulk Buster <br><strong>Type :</strong> Heavy Duty Suit</p>
         </div>
       </div>
     </div>
-    <div class="col-sm-6 col-md-4 my-1">
+    <div class="col-sm-6 col-md-4 my-2">
       <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
+        <img class="card-img-top" src="images/armors/mark-48.png" alt="Card image cap">
         <div class="card-body">
-          <h2>Mark 2</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 my-1">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 my-1">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 my-1">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 my-1">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 my-1">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 my-1">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 my-1">
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-          <h2>Mark 3</h2>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <h2>Mark L (50)</h2>
+          <p class="card-text"><strong>Name :</strong> Model-Prime-Armor <br><strong>Type :</strong> Nano-Tech Suit</p>
         </div>
       </div>
     </div>
   </section>
+  <!-- Jarvis -->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">J.A.R.V.I.S.</h1>
+      <p class="lead">J.A.R.V.I.S. is an A.I. who can respond according to the users thoughts and emotions, such as problems in Tony's life that he tries to deal and help him with. Jarvis is Tony's personal and closest friend as well as his assistant in helping him in his work or when he does his super-hero job. </p>
+      <p class=lead>"Started out, J.A.R.V.I.S. was just a natural language UI. Now he runs the Iron Legion. He runs more of the business than anyone besides Pepper." 
+        ―Tony Stark to Bruce Banner</p>
+    </div>
+  </div>
+  <!-- <div class="card bg-dark text-white">
+    <img class="card-img" src="images/jarvis_card.png" alt="Card image">
+    <div class="card-img-overlay">
+      <h5 class="card-title">J.A.R.V.I.S.</h5>
+      <p class="card-text">    "Started out, J.A.R.V.I.S. was just a natural language UI. Now he runs the Iron Legion. He runs more of the business than anyone besides Pepper." 
+        ―Tony Stark to Bruce Banner</p>
+      <p class="card-text">J.A.R.V.I.S. is an A.I. who can respond according to the users thoughts and emotions, such as problems in Tony's life that he tries to deal and help him with. Jarvis is Tony's personal and closest friend as well as his assistant in helping him in his work or when he does his super-hero job. </p>
+    </div>
+  </div> -->
+  <!-- Footer -->
+  <footer class="page-footer font-small mt-2">
+
+    <!-- Footer Links -->
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">About us</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Movies</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Awards</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#!">Help</a>
+          </h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#" data-toggle="modal" data-target="#exampleModal">Contact</a>
+          </h6>
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+        <div class="col-md-8 col-12 mt-5">
+          <p style="line-height: 1.7rem">A wealthy American business magnate, playboy, and ingenious scientist, <strong>Tony
+              Stark</strong>
+            creates a powered suit of armor. Stark develops his suit, adding weapons and other technological devices he designed through
+            his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron Man. </p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+      <!-- Grid row-->
+      <div class="row pb-3">
+
+        <!-- Grid column -->
+        <div class="col-md-12">
+
+          <div class="mb-5 flex-center text-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fa fa-facebook fa-lg white-text mr-4"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fa fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fa fa-linkedin fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fa fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fa fa-pinterest fa-lg white-text"> </i>
+            </a>
+
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2018 Copyright:
+      <a href="https://mdbootstrap.com/bootstrap-tutorial/"> spacenditure.com</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 
 </body>
 

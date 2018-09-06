@@ -1,18 +1,27 @@
 @import 'custom';
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 @import '~bootstrap/scss/bootstrap';
+@mixin card_bck {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#134d14+0,4e3563+100&0.73+0,1+100 */
+    background: -moz-linear-gradient(left, rgba(19,77,20,0.73) 0%, rgba(78,53,99,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(19,77,20,0.73) 0%,rgba(78,53,99,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(19,77,20,0.73) 0%,rgba(78,53,99,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba134d14', endColorstr='#4e3563',GradientType=1 ); /* IE6-9 */
+}
 
+body{
+    background-image: url('../images/avengers-75961.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .navbar{
     background-color:#002A32;
     
     .navbar-brand{
         color: white;
     }
-}
-.navbar-nav.mr-auto.mt-2.mt-lg-0 li a{
-    color:#00D6D6;
-}
-.navbar-nav.mr-auto.mt-2.mt-lg-0 li a:hover{
-    color: white;
 }
 
 .custom-toggler.navbar-toggler {
@@ -21,3 +30,42 @@
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+.page-footer.font-small{
+    background-color:#002A32;
+    color: white;
+    a{
+        color: white;
+    }
+    a:hover{
+        color:#00D6D6;
+        text-decoration: none;
+    }
+}
+
+
+
+hr{
+            background: white;
+}
+#armors, #heading_armor{
+    @include card_bck;  
+  .card-body{
+    // @include card_bck;  
+    color: #002138;
+    background-color: #E9ECEF;
+    }
+}
+#heading_armor{
+    // background: #37543f;
+    color: white;
+}
+
+#exampleModel.modal.fade{
+    color: black;
+}
+.jumbotron.jumbotron-fluid{
+  color: #281108;
+}
+
+
+
