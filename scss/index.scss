@@ -37,25 +37,36 @@ body{
         color:#00D6D6;
         text-decoration: none;
     }
+    #exampleModel.modal.fade{
+      color: black;
+  }
 }
 hr{
     background: white;
 }
 #armors, #heading_armor{
     @include card_bck;  
+    .card{
+      box-shadow: 2px 2px 2px 2px;
+    }
   .card-body{
     // @include card_bck;  
     color: #002138;
     background-color: #E9ECEF;
+    }
+    img:hover{
+      // opacity: 0.5;
+      transform: scale(1.1);
+      background: rgba(19,77,20,0.73);
+      box-shadow: 4px 4px 4px 4px;
     }
 }
 #heading_armor{
     // background: #37543f;
     color: white;
 }
-#exampleModel.modal.fade{
-    color: black;
-}
+
 .jumbotron.jumbotron-fluid{
   color: #281108;
+  box-shadow: 2px 2px 2px 2px;
 }

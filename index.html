@@ -12,7 +12,7 @@
 
 <body>
   <!-- Alert message -->
-  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
     “Heroes are made by the paths they choose, not the powers they are graced with.” – Tony Stark
     <a href="#quotes" class="badge badge-info ml-2">More</a>
     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -75,7 +75,7 @@
   <!-- Jumbotrons -->
   <div class="jumbotron">
     <h1 class="display-4" id="quotes">Quotes</h1>
-    <p class="lead">“sometimes you gotta Run before you can Walk.” ― tony stark </p>
+    <p class="lead">“Sometimes you gotta Run before you can Walk.” ― tony stark </p>
     <hr class="my-4">
     <div id="accordion">
       <div class="card">
@@ -90,7 +90,7 @@
         <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
           <div class="card-body">
             <p>“ I shouldn’t be alive, unless it was for a reason, I know what I have to do, and I know it is right.”</p>
-            <p>" Don't let someone who has done done nothing tell you how to to do anything."</p>
+            <p>" Don't let someone who has done nothing tell you how to to do anything."</p>
             <p>"If we can't protect the world you can be damn sure we'll avenge it."</p>
             <p>"You need to know what to do when the sun is not shinning."</p>
             <p>"The lesson is that you can still make mistakes and be forgiven"</p>
@@ -251,7 +251,7 @@
     </div>
   </section>
   <!-- Jarvis -->
-  <div class="jumbotron jumbotron-fluid">
+  <div class="jumbotron jumbotron-fluid mt-2">
     <div class="container">
       <h1 class="display-4">J.A.R.V.I.S.</h1>
       <p class="lead">J.A.R.V.I.S. is an A.I. who can respond according to the users thoughts and emotions, such as problems
@@ -309,19 +309,32 @@
           </h6>
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
+              <div class="modal-content text-dark">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Contact J.A.R.V.I.S.</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
-                  ...
+                  <form>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Your Name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Message</label>
+                      <div class="col-sm-10">
+                        <textarea class="form-control" id="inputPassword3" rows=5 placeholder="Type Message Here"></textarea>
+                      </div>
+                    </div>
+                  </form>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary">Send</button>
                 </div>
               </div>
             </div>
